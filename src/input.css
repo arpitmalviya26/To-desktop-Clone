@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .gradient-hover-outer {
+        @apply p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200;
+    }
+    .gradient-hover-inner {
+        @apply bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50;
+    }
+    .details-text{
+        @apply text-xl text-center text-black opacity-80;
+    }
+    .gradient-Install-Box{
+        @apply bg-gradient-to-t  from-slate-200 to-slate-300 
+    }
+
+    .h2-style-Faq{
+        @apply text-5xl font-display leading-normal sm:font-semibold max-w-full
+    }
+
+    .p-style-Faq{
+        @apply text-lg font-display text-gray-700  
+    }
+}
